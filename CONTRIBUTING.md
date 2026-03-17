@@ -34,7 +34,7 @@ This document describes how to propose changes, report bugs, and submit pull req
 
 ## Windows Setup
 
-Windows does not include `make` by default. You need to install it first.
+Windows does not include `make` by default. We use `make` as a task runner for common development, testing, demo, and infrastructure commands, so you need to install it first.
 
 **Step 1 — Open PowerShell as Administrator** (search "PowerShell" in Start Menu → right-click → "Run as administrator")
 
