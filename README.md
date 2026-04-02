@@ -33,13 +33,9 @@
 
 ## Why OpenSRE?
 
-When something breaks in production, the pressure is immediate, but the evidence is scattered. Logs in Datadog. Metrics in Grafana. Runbooks in Notion. Context in Slack threads already 200 messages deep.
+When something breaks in production, the evidence is scattered across logs, metrics, traces, runbooks, and Slack threads.
 
-OpenSRE is the open-source answer to that chaos. It's an AI SRE agent that correlates signals across your entire stack, reasons through root cause, and surfaces a clear diagnosis - in the time it used to take just to _find_ the right dashboard.
-
-Unlike closed SRE platforms, OpenSRE is **fully open source and self-hostable**. No vendor lock-in and no black-box reasoning. You own the agent, the data, and the workflow.
-
-> Whether you're an SRE triaging a P0, a platform engineer building internal tooling, a developer who just got paged, or an EM trying to reduce MTTR - OpenSRE works for your whole team.
+OpenSRE is an open-source framework for AI SRE agents, built to run on your own infrastructure with your own tools, data, and workflows.
 
 SWE-bench<sup>1</sup> gave coding agents scalable training data and clear feedback. Production incident response still has no equivalent. 
 
