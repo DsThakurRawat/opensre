@@ -29,11 +29,18 @@
         "groups": [
           {
             "group": "Overview",
-            "pages": ["index", "showcase", "features"]
+            "pages": [
+              "index",
+              "showcase",
+              "features"
+            ]
           },
           {
             "group": "First steps",
-            "pages": ["quickstart", "faq"]
+            "pages": [
+              "quickstart",
+              "faq"
+            ]
           }
         ]
       },
@@ -58,7 +65,9 @@
         "groups": [
           {
             "group": "Overview",
-            "pages": ["integrations-overview"]
+            "pages": [
+              "integrations-overview"
+            ]
           },
           {
             "group": "Observability and incidents",
@@ -112,7 +121,10 @@
         "groups": [
           {
             "group": "Getting started",
-            "pages": ["introduction-monitoring", "quickstart-monitoring"]
+            "pages": [
+              "introduction-monitoring",
+              "quickstart-monitoring"
+            ]
           },
           {
             "group": "Use cases",
@@ -226,7 +238,9 @@
         "groups": [
           {
             "group": "Daily updates",
-            "pages": ["daily-updates/overview"]
+            "pages": [
+              "daily-updates/overview"
+            ]
           }
         ]
       }
