@@ -1053,6 +1053,13 @@ Thanks goes to these amazing people:
             <sub><b>WatchTree-19</b></sub>
         </a>
     </td>
+            <td align="center">
+        <a href="https://github.com/cokerrd">
+            <img src="https://avatars.githubusercontent.com/u/82083946?v=4" width="100" alt="cokerrd"/>
+            <br />
+            <sub><b>cokerrd</b></sub>
+        </a>
+    </td>
 		</tr>
 	</tbody>
 </table>
