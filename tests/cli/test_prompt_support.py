@@ -38,6 +38,66 @@ def test_stock_questionary_select_escape_cancels() -> None:
         assert app.run() is None
 
 
+def test_stock_questionary_confirm_escape_cancels() -> None:
+    """Verify that pressing Escape cancels a confirm prompt (Issue #1117).
+
+    Sends the Escape byte (\\x1b) to a questionary.confirm application
+    and asserts that it returns None instead of hanging.
+    """
+    install_questionary_escape_cancel()
+    with create_pipe_input() as pipe_input:
+        q = questionary.confirm(
+            "Are you sure?",
+            input=pipe_input,
+            output=DummyOutput(),
+        )
+        pipe_input.send_bytes(b"\x1b")
+        app = q.application
+        app.input = pipe_input
+        app.output = DummyOutput()
+        assert app.run() is None
+
+
+def test_stock_questionary_text_escape_cancels() -> None:
+    """Verify that pressing Escape cancels a text input prompt (Issue #1117).
+
+    Sends the Escape byte (\\x1b) to a questionary.text application
+    and asserts that it returns None.
+    """
+    install_questionary_escape_cancel()
+    with create_pipe_input() as pipe_input:
+        q = questionary.text(
+            "Name",
+            input=pipe_input,
+            output=DummyOutput(),
+        )
+        pipe_input.send_bytes(b"\x1b")
+        app = q.application
+        app.input = pipe_input
+        app.output = DummyOutput()
+        assert app.run() is None
+
+
+def test_stock_questionary_path_escape_cancels() -> None:
+    """Verify that pressing Escape cancels a path selection prompt (Issue #1117).
+
+    Sends the Escape byte (\\x1b) to a questionary.path application
+    and asserts that it returns None.
+    """
+    install_questionary_escape_cancel()
+    with create_pipe_input() as pipe_input:
+        q = questionary.path(
+            "Path",
+            input=pipe_input,
+            output=DummyOutput(),
+        )
+        pipe_input.send_bytes(b"\x1b")
+        app = q.application
+        app.input = pipe_input
+        app.output = DummyOutput()
+        assert app.run() is None
+
+
 def test_install_questionary_ctrl_c_double_exit_is_idempotent() -> None:
     install_questionary_ctrl_c_double_exit()
     first = questionary.select
