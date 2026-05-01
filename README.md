@@ -1143,6 +1143,13 @@ Thanks goes to these amazing people:
             <sub><b>emefienem</b></sub>
         </a>
     </td>
+            <td align="center">
+        <a href="https://github.com/TejasS1233">
+            <img src="https://avatars.githubusercontent.com/u/145673356?v=4" width="100" alt="TejasS1233"/>
+            <br />
+            <sub><b>TejasS1233</b></sub>
+        </a>
+    </td>
 		</tr>
 	</tbody>
 </table>
