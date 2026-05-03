@@ -124,6 +124,7 @@ pipx install opensre
 opensre onboard
 opensre investigate -i tests/e2e/kubernetes/fixtures/datadog_k8s_alert.json
 opensre update
+opensre uninstall   # remove opensre and all local data
 ```
 
 ### Interactive mode
